@@ -28,7 +28,7 @@ class QuestionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool){
         super.viewWillAppear(animated)
         wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String, String>]
-        
+        print(wordArray)
         wordArray.shuffle()
         questionLabel.text = wordArray[nowNumber]["english"]
         

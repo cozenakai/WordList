@@ -32,7 +32,7 @@ class ListTableTableViewController: UITableViewController {
         if saveData.array(forKey: "WORD") != nil{
             wordArray = saveData.array(forKey: "WORD") as! [Dictionary<String, String>]
         }
-        tableView.rowHeight = 70
+        tableView.reloadData()
     }
     
     
@@ -48,8 +48,7 @@ class ListTableTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-            as! ListTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ListTableViewCell
 
 
         let nowIndexPathDictionary = wordArray[indexPath.row]
