@@ -27,8 +27,7 @@
                                     <color key="titleColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAq-k4-nuV"/>
-                                    <segue destination="KRa-eD-ETw" kind="show" identifier="toQuestionView" id="kr2-x7-IvV"/>
+                                    <action selector="startButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="VHt-vk-3Mq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ld5-zu-2eZ">
@@ -46,6 +45,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="FUW-1o-rVG"/>
+                    <connections>
+                        <segue destination="KRa-eD-ETw" kind="presentation" identifier="toQuestionView" id="cn9-3u-sX7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
